@@ -105,7 +105,7 @@ nav .container {
 .nav-links {
     display: flex;
     gap: 40px;
-    align-items: center; /* Fixed vertical alignment */
+    align-items: center;
 }
 
 .nav-links a {
@@ -340,21 +340,40 @@ nav .btn-primary {
     margin-bottom: 24px;
 }
 
-.app-info ul li {
-    margin-bottom: 16px;
+.feature-list li {
     display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    font-weight: 500;
+    align-items: center; /* Vertically center icon with text container */
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
-.app-info ul li i {
+.feature-list li i {
     color: var(--primary);
-    font-size: 1.2rem;
-    margin-top: 4px;
+    font-size: 1.4rem;
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.feature-list li div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.feature-list li b {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: block;
+}
+
+.feature-list li span {
+    color: var(--text-muted);
+    font-size: 0.95rem;
 }
 
 .app-visual img {
+    width: 100%;
+    max-width: 500px;
     border-radius: 40px;
     box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1);
 }
@@ -590,7 +609,7 @@ footer {
 
 .menu-toggle .bar {
     height: 3px;
-    width: 100%;
+    width: 30px; /* Force equal width */
     background-color: var(--secondary);
     border-radius: 10px;
     transition: var(--transition);
@@ -639,7 +658,8 @@ footer {
     .app-section {
         flex-direction: column;
         text-align: center;
-        gap: 40px;
+        gap: 32px;
+        padding: 40px 0;
     }
 
     .app-section.reverse {
@@ -648,6 +668,16 @@ footer {
 
     .app-badge {
         justify-content: center;
+        margin-bottom: 16px;
+    }
+
+    .app-badge img {
+        height: 44px;
+        border-radius: 12px;
+    }
+
+    .app-badge h3 {
+        font-size: 1.1rem;
     }
 
     .feature-list {
@@ -760,11 +790,45 @@ footer {
         width: 100%;
     }
 
-    .app-info h2 {
-        font-size: 2.5rem;
+    .app-visual img {
+        max-width: 260px;
+        margin: 0 auto;
     }
 
-    .feature-title {
-        font-size: 1.8rem;
+    .app-info h2 {
+        font-size: 2.2rem;
+        margin-bottom: 16px;
+    }
+
+    .app-info p {
+        font-size: 1rem;
+        margin-bottom: 24px;
+    }
+
+    .feature-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 30px;
+    }
+
+    .feature-list li {
+        background: rgba(0, 102, 255, 0.03);
+        padding: 16px 20px;
+        border-radius: 16px;
+        border: 1px solid rgba(0, 102, 255, 0.05);
+        align-items: center; /* Ensure centered alignment on mobile too */
+    }
+
+    .feature-list li b {
+        margin-bottom: 4px;
+    }
+
+    .feature-list li i {
+        font-size: 1rem;
+    }
+
+    .app-btn {
+        margin-top: 0;
     }
 }
