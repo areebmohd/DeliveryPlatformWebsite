@@ -71,6 +71,11 @@
             <a href="#" class="logo">
                 <span>Zoro</span>
             </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#apps">Apps</a></li>
@@ -89,7 +94,7 @@
                     <p>Experience lightning-fast delivery for your favorite food, groceries, and essentials. No hidden charges, just pure speed.</p>
                     <div class="hero-btns">
                         <a href="#" class="btn btn-primary">Get the App</a>
-                        <a href="#contact" class="btn btn-outline" style="margin-left: 15px;">Get in Touch</a>
+                        <a href="#contact" class="btn btn-outline">Get in Touch</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -102,14 +107,14 @@
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <div style="text-align: center; margin-bottom: 80px;">
-                <h2 style="font-size: 3.5rem; margin-bottom: 16px;">Why Choose Zoro?</h2>
+            <div class="section-header">
+                <h2>Why Choose Zoro?</h2>
                 <p>Tailored solutions for everyone in the delivery ecosystem.</p>
             </div>
 
             <!-- For Customers Section -->
-            <div style="margin-bottom: 60px;">
-                <h3 style="font-size: 2rem; margin-bottom: 40px; color: var(--primary); text-align: center;">For Customers</h3>
+            <div class="feature-group">
+                <h3 class="feature-title">For Customers</h3>
                 <div class="features-grid">
                     <div class="feature-card">
                         <i class="fas fa-truck-fast"></i>
@@ -135,8 +140,8 @@
             </div>
 
             <!-- For Businesses Section -->
-            <div>
-                <h3 style="font-size: 2rem; margin-bottom: 40px; color: var(--primary); text-align: center;">For Businesses</h3>
+            <div class="feature-group">
+                <h3 class="feature-title">For Businesses</h3>
                 <div class="features-grid">
                     <div class="feature-card">
                         <i class="fas fa-shop"></i>
@@ -167,46 +172,48 @@
     <section id="apps" class="app-showcase">
         <div class="container">
             <div class="app-section">
-                <div class="app-info">
-                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 24px;">
-                        <img src="zoroAppLogo.png" alt="Zoro App" style="height: 60px; border-radius: 15px;">
-                        <h3 style="font-size: 1.5rem; color: var(--primary); font-weight: 800;">ZORO MAIN APP</h3>
+                    <div class="app-info">
+                    <div class="app-badge">
+                        <img src="zoroAppLogo.png" alt="Zoro App">
+                        <h3>ZORO MAIN APP</h3>
                     </div>
                     <h2>One App for <br>Everything.</h2>
-                    <p style="margin-bottom: 32px;">The ultimate platform designed for both seamless customer ordering and powerful business growth.</p>
-                    <ul style="color: var(--text-main);">
+                    <p>The ultimate platform designed for both seamless customer ordering and powerful business growth.</p>
+                    <ul class="feature-list">
                         <li><i class="fas fa-check-circle"></i> <b>For Customers:</b> Instant browsing & exclusive deals.</li>
                         <li><i class="fas fa-check-circle"></i> <b>For Businesses:</b> Robust tools to scale your store.</li>
                     </ul>
-                    <a href="#" class="btn btn-primary" style="margin-top: 40px;">Get Started</a>
+                    <a href="#" class="btn btn-primary app-btn">Get Started</a>
+                </div>
                 </div>
                 <div class="app-visual">
-                    <img src="customer_business.png" alt="Zoro Ecosystem" style="max-width: 90%; border-radius: 30px;">
+                    <img src="customer_business.png" alt="Zoro Ecosystem">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- App Showcase: Rider App -->
-    <section id="rider" class="app-showcase" style="background: var(--bg-light); border-radius: 80px; margin: 0 24px;">
+    <section id="rider" class="app-showcase rider-section">
         <div class="container">
             <div class="app-section reverse">
-                <div class="app-info">
-                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 24px;">
-                        <img src="ZORORiderLogo.png" alt="Zoro Rider" style="height: 60px; border-radius: 15px;">
-                        <h3 style="font-size: 1.5rem; color: var(--primary); font-weight: 800;">ZORO RIDER APP</h3>
+                    <div class="app-info">
+                    <div class="app-badge">
+                        <img src="ZORORiderLogo.png" alt="Zoro Rider">
+                        <h3>ZORO RIDER APP</h3>
                     </div>
                     <h2>Be Your <br>Own Boss.</h2>
-                    <p style="margin-bottom: 32px;">Join the elite fleet of Zoro riders and take control of your financial future.</p>
-                    <ul style="color: var(--text-main);">
+                    <p>Join the elite fleet of Zoro riders and take control of your financial future.</p>
+                    <ul class="feature-list">
                         <li><i class="fas fa-check-circle"></i> Transparent and scalable income.</li>
                         <li><i class="fas fa-check-circle"></i> No commission cutting or hidden deductions.</li>
                         <li><i class="fas fa-check-circle"></i> Complete flexibility to work whenever you want.</li>
                     </ul>
-                    <a href="#" class="btn btn-primary" style="margin-top: 40px;">Become a Rider</a>
+                    <a href="#" class="btn btn-primary app-btn">Become a Rider</a>
+                </div>
                 </div>
                 <div class="app-visual">
-                    <img src="rider.png" alt="Rider App" style="max-width: 90%; border-radius: 30px;">
+                    <img src="rider.png" alt="Rider App">
                 </div>
             </div>
         </div>
@@ -215,9 +222,9 @@
     <!-- Contact Us Section -->
     <section id="contact" class="contact-section">
         <div class="container">
-            <div style="text-align: center; margin-bottom: 80px;">
-                <h2 style="color: white; font-size: 3.5rem;">Let's Connect</h2>
-                <p style="color: #94A3B8;">We're here to help you around the clock.</p>
+            <div class="section-header contact-header">
+                <h2>Let's Connect</h2>
+                <p>We're here to help you around the clock.</p>
             </div>
             <div class="contact-grid">
                 <div class="contact-item">
@@ -240,9 +247,9 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="logo">
-                        <span style="color: white;">Zoro</span>
+                        <span class="white-text">Zoro</span>
                     </div>
-                    <p style="color: #64748B;">Empowering local businesses and delivering joy to your doorstep. Join the revolution today.</p>
+                    <p class="footer-desc">Empowering local businesses and delivering joy to your doorstep. Join the revolution today.</p>
                 </div>
                 <div class="footer-section">
                     <h3>Company</h3>
@@ -268,8 +275,8 @@
                     </div>
                 </div>
             </div>
-            <div style="border-top: 1px solid rgba(255,255,255,0.05); margin-top: 80px; padding-top: 40px; text-align: center;">
-                <p style="color: #475569; font-size: 0.9rem;">&copy; 2026 Zoro Delivery App. All rights reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Zoro Delivery App. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -280,6 +287,25 @@
             history.scrollRestoration = 'manual';
         }
         window.scrollTo(0, 0);
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            document.body.classList.toggle('no-scroll');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            });
+        });
     </script>
 </body>
 </html>
