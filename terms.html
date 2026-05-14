@@ -3,26 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms & Conditions | Zoro Delivery</title>
+    <title>Terms & Conditions | Zoro Platform</title>
     <link rel="icon" type="image/png" href="zoroAppLogo.png">
-    <meta name="description" content="Review the Terms and Conditions for using Zoro Delivery services. Information on service agreements, user responsibilities, and liability.">
+    <meta name="description" content="Official Terms and Conditions for Zoro Platform. Read about our service agreements and user responsibilities.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://zorodelivery.com/terms.html">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .policy-container {
-            max-width: 900px;
-            margin: 180px auto 100px;
-            padding: 0 24px;
+        .policy-header {
+            padding: 160px 0 80px;
+            background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
+            text-align: center;
         }
-        .policy-container h1 { font-size: 3.5rem; margin-bottom: 48px; }
-        .policy-container h2 { font-size: 1.8rem; margin-top: 48px; margin-bottom: 24px; color: var(--primary); }
-        .policy-container p { font-size: 1.1rem; margin-bottom: 24px; }
-
+        .policy-header h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .last-updated {
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+        .policy-body {
+            max-width: 900px;
+            margin: -60px auto 100px;
+            background: var(--white);
+            padding: 60px;
+            border-radius: 40px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 10;
+        }
+        .policy-section {
+            margin-bottom: 48px;
+        }
+        .policy-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .policy-section p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
         @media (max-width: 768px) {
-            .policy-container { margin-top: 120px; }
-            .policy-container h1 { font-size: 2.5rem; margin-bottom: 24px; }
-            .policy-container h2 { font-size: 1.5rem; margin-top: 32px; }
+            .policy-header { padding: 120px 0 60px; }
+            .policy-header h1 { font-size: 2.8rem; }
+            .policy-body { margin: -40px 20px 60px; padding: 30px; border-radius: 24px; }
         }
     </style>
 </head>
@@ -42,23 +76,45 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#features">Features</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
-                <li><a href="#" class="btn btn-primary">Download</a></li>
+                <li><a href="#" class="btn btn-primary">Download App</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="policy-container">
-        <h1>Terms & Conditions</h1>
-        <p>Last Updated: April 24, 2026</p>
+    <div class="policy-header">
+        <div class="container">
+            <h1>Terms & Conditions</h1>
+            <p class="last-updated">Effective Date: May 14, 2026</p>
+        </div>
+    </div>
 
-        <h2>1. Service Agreement</h2>
-        <p>By using Zoro Delivery, you agree to comply with our delivery standards and payment policies. We reserve the right to modify services at any time.</p>
+    <div class="container">
+        <div class="policy-body">
+            <div class="policy-section">
+                <h2>1. Service Agreement</h2>
+                <p>By accessing and using the Zoro Platform (including our website and mobile applications), you agree to be bound by these Terms & Conditions. Our platform facilitates on-demand delivery services connecting customers, stores, and independent delivery partners.</p>
+            </div>
 
-        <h2>2. User Responsibility</h2>
-        <p>Users are responsible for providing accurate delivery information and being available to receive orders at the specified location.</p>
+            <div class="policy-section">
+                <h2>2. User Responsibility</h2>
+                <p>Users are responsible for maintaining the confidentiality of their account credentials. You agree to provide accurate, current, and complete information during the registration process and to update such information to keep it accurate and complete.</p>
+            </div>
 
-        <h2>3. Liability</h2>
-        <p>Zoro Delivery is not liable for indirect damages arising from the use of our platform, though we strive for 100% satisfaction in every delivery.</p>
+            <div class="policy-section">
+                <h2>3. Delivery & Payments</h2>
+                <p>Payments for orders are processed through our secure platform. Delivery times provided are estimates and may vary based on weather, traffic, and other external factors. Cancellation policies apply as detailed in the mobile application's customer support.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2>4. Liability</h2>
+                <p>Zoro Platform acts as a facilitator. While we strive to ensure the highest quality of service, we are not liable for indirect, incidental, or consequential damages arising from the use of our services or products purchased from third-party stores on our platform.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2>5. Modifications</h2>
+                <p>We reserve the right to modify these terms at any time. Continued use of the platform after such changes constitutes your acceptance of the new terms.</p>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -73,30 +129,22 @@
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
+                <div style="margin-top: 20px;">
+                    <a href="terms.html" style="color: var(--primary); font-size: 0.9rem; margin: 0 10px;">Terms of Service</a>
+                    <a href="privacy.html" style="color: #64748B; font-size: 0.9rem; margin: 0 10px;">Privacy Policy</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <script>
-        // Mobile Menu Toggle
         const menuToggle = document.getElementById('mobile-menu');
         const navLinks = document.querySelector('.nav-links');
-
         menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('active');
             navLinks.classList.toggle('active');
             document.body.classList.toggle('no-scroll');
         });
-
-        // Close menu when clicking a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                menuToggle.classList.remove('active');
-                navLinks.classList.remove('active');
-                document.body.classList.remove('no-scroll');
-            });
-        });
     </script>
-
 </body>
 </html>

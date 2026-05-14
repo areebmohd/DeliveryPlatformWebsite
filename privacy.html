@@ -3,26 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Zoro Delivery</title>
+    <title>Privacy Policy | Zoro Platform</title>
     <link rel="icon" type="image/png" href="zoroAppLogo.png">
-    <meta name="description" content="Read the Zoro Delivery Privacy Policy. Learn how we collect, use, and protect your data to ensure a secure delivery experience.">
+    <meta name="description" content="Official Privacy Policy for Zoro Platform. Comprehensive details on data collection for Customers, Stores, and Riders. Play Store Compliant.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://zorodelivery.com/privacy.html">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .policy-container {
-            max-width: 900px;
-            margin: 180px auto 100px;
-            padding: 0 24px;
+        .policy-header {
+            padding: 160px 0 80px;
+            background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
+            text-align: center;
         }
-        .policy-container h1 { font-size: 3.5rem; margin-bottom: 48px; }
-        .policy-container h2 { font-size: 1.8rem; margin-top: 48px; margin-bottom: 24px; color: var(--primary); }
-        .policy-container p { font-size: 1.1rem; margin-bottom: 24px; }
-
+        .policy-header h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .last-updated {
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+        .policy-body {
+            max-width: 950px;
+            margin: -60px auto 100px;
+            background: var(--white);
+            padding: 60px;
+            border-radius: 40px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 10;
+        }
+        .policy-section {
+            margin-bottom: 56px;
+        }
+        .policy-section h2 {
+            font-size: 2rem;
+            margin-bottom: 28px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-bottom: 2px solid rgba(0, 102, 255, 0.1);
+            padding-bottom: 12px;
+        }
+        .policy-section h2 i {
+            font-size: 1.6rem;
+        }
+        .user-type-box {
+            background: #f8fafc;
+            border-radius: 24px;
+            padding: 32px;
+            margin-bottom: 32px;
+            border: 1px solid rgba(0, 0, 0, 0.03);
+        }
+        .user-type-box h3 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .user-type-box h3 i {
+            color: var(--primary);
+        }
+        .data-item {
+            margin-bottom: 20px;
+        }
+        .data-item b {
+            display: block;
+            color: var(--text-main);
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+        }
+        .data-item span {
+            display: block;
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .reason-tag {
+            display: inline-block;
+            background: rgba(0, 102, 255, 0.1);
+            color: var(--primary);
+            font-size: 0.85rem;
+            padding: 2px 10px;
+            border-radius: 6px;
+            margin-top: 6px;
+            font-weight: 600;
+        }
+        .highlight-box {
+            background: #fff4f4;
+            border-left: 4px solid #ef4444;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 32px 0;
+        }
+        .highlight-box h4 {
+            color: #b91c1c;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
         @media (max-width: 768px) {
-            .policy-container { margin-top: 120px; }
-            .policy-container h1 { font-size: 2.5rem; margin-bottom: 24px; }
-            .policy-container h2 { font-size: 1.5rem; margin-top: 32px; }
+            .policy-header h1 { font-size: 2.8rem; }
+            .policy-body { margin: -40px 16px 60px; padding: 30px; }
+            .user-type-box { padding: 20px; }
         }
     </style>
 </head>
@@ -33,73 +122,173 @@
             <a href="index.html" class="logo">
                 <span>Zoro</span>
             </a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#features">Features</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-                <li><a href="#" class="btn btn-primary">Download</a></li>
+                <li><a href="#" class="btn btn-primary">Download App</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="policy-container">
-        <h1>Privacy Policy</h1>
-        <p>Last Updated: April 24, 2026</p>
+    <div class="policy-header">
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: May 14, 2026</p>
+        </div>
+    </div>
 
-        <h2>1. Information We Collect</h2>
-        <p>We collect information you provide directly to us when you create or modify your account, request services, contact customer support, or otherwise communicate with us. This includes your name, email, phone number, and delivery address.</p>
+    <div class="container">
+        <div class="policy-body">
+            <div class="policy-section">
+                <p style="font-size: 1.1rem; color: var(--text-main);">Zoro Platform operates a multi-role ecosystem connecting Customers, Store Owners (Business Partners), and Delivery Partners (Riders). This policy details the specific data we collect for each role to ensure a safe, efficient, and transparent delivery experience. <b>This policy applies to our Zoro App and Zoro Rider applications.</b></p>
+            </div>
 
-        <h2>2. Data Usage</h2>
-        <p>Your data is used solely to facilitate the delivery process and improve your experience. We do not sell your personal information to third parties.</p>
+            <div class="policy-section">
+                <h2><i class="fas fa-user-tag"></i> 1. Detailed Information Collection</h2>
+                
+                <!-- CUSTOMER DATA -->
+                <div class="user-type-box">
+                    <h3><i class="fas fa-shopping-cart"></i> A. For Customer Accounts ("Zoro App")</h3>
+                    <div class="data-item">
+                        <b>Identity & Contact Info</b>
+                        <span>Name, Phone Number and Email Address.</span>
+                        <div class="reason-tag">Reason: Account security, order updates, and rider communication.</div>
+                    </div>
+                    <div class="data-item">
+                        <b>Delivery Locations</b>
+                        <span>Saved addresses, address labels, and Precise GPS Coordinates.</span>
+                        <div class="reason-tag">Reason: Accurate order delivery and identifying nearby stores.</div>
+                    </div>
+                    <div class="data-item">
+                        <b>Shopping History</b>
+                        <span>Order details, basket contents, and favorite products/stores.</span>
+                        <div class="reason-tag">Reason: Personalized experience and order record keeping.</div>
+                    </div>
+                </div>
 
-        <h2>3. Security</h2>
-        <p>We implement industry-standard security measures to protect your data. Your payment information is processed through secure, encrypted gateways.</p>
+                <!-- BUSINESS DATA -->
+                <div class="user-type-box">
+                    <h3><i class="fas fa-store"></i> B. For Business Accounts ("Zoro App")</h3>
+                    <div class="data-item">
+                        <b>Business Profile</b>
+                        <span>Store name, description, category and marketing image (Banner).</span>
+                        <div class="reason-tag">Reason: Displaying your business to platform users.</div>
+                    </div>
+                    <div class="data-item">
+                        <b>Verification Documents</b>
+                        <span>Business license photos, storefront images and identity verification docs.</span>
+                        <div class="reason-tag">Reason: Ensuring marketplace legitimacy and safety.</div>
+                    </div>
+                    <div class="data-item">
+                        <b>Financial Details</b>
+                        <span>Bank Account Number, IFSC Code, Account Holder Name and UPI ID.</span>
+                        <div class="reason-tag">Reason: Processing automated earnings payouts to your bank.</div>
+                    </div>
+                    <div class="data-item">
+                        <b>Operational Data</b>
+                        <span>Business hours, contact links (WhatsApp/Instagram) and product inventory.</span>
+                        <div class="reason-tag">Reason: Managing order flow and customer inquiries.</div>
+                    </div>
+                </div>
 
-        <h2>4. Contact</h2>
-        <p>For any privacy-related queries, please contact us at zorodeliveryapp@gmail.com.</p>
+                <!-- RIDER DATA -->
+                <div class="user-type-box">
+                    <h3><i class="fas fa-motorcycle"></i> C. For Delivery Partners ("Zoro Rider")</h3>
+                    <div class="data-item">
+                        <b>Rider Identity</b>
+                        <span>Full name, Phone number, Email, and Profile Picture.</span>
+                        <div class="reason-tag">Reason: Professional verification and customer recognition.</div>
+                    </div>
+                    <div class="data-item">
+                        <b>Vehicle Information</b>
+                        <span>Vehicle type (e.g., Bike, Truck) and Registration Number.</span>
+                        <div class="reason-tag">Reason: Matching load capacity with orders and legal compliance.</div>
+                    </div>
+                    <div class="data-item">
+                        <b>Financial Payout Info</b>
+                        <span>UPI ID for earnings settlement.</span>
+                        <div class="reason-tag">Reason: Facilitating swift daily/weekly earnings distribution.</div>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h4><i class="fas fa-map-marker-alt"></i> Continuous Location Tracking (Background)</h4>
+                        <p>To ensure real-time order tracking for customers and to optimize order assignments, the Zoro Rider app collects precise location data <b>even when the app is in the background or closed</b>. This tracking is active only when you are "Online" or on an "Active Delivery".</p>
+                    </div>
+                </div>
+
+                <!-- AUTOMATIC DATA -->
+                <div class="user-type-box">
+                    <h3><i class="fas fa-mobile-alt"></i> D. Automatically Collected Data (All Users)</h3>
+                    <div class="data-item">
+                        <b>Device Identifiers</b>
+                        <span>FCM Notification Tokens, device model, and OS version.</span>
+                        <div class="reason-tag">Reason: Delivering critical order alerts and technical optimization.</div>
+                    </div>
+                    <div class="data-item">
+                        <b>Interaction Logs</b>
+                        <span>App usage patterns, search queries, and crash reports.</span>
+                        <div class="reason-tag">Reason: Platform troubleshooting and service improvement.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="policy-section">
+                <h2><i class="fas fa-shield-alt"></i> 2. Data Safety & Security</h2>
+                <div class="data-item">
+                    <b>Data Protection</b>
+                    <span>All data is stored securely using industry-standard encryption via Supabase. We use SSL/TLS encryption for all data in transit between our apps and servers.</span>
+                </div>
+                <div class="data-item">
+                    <b>Data Sharing</b>
+                    <span>We do not sell your personal information. Data is shared only with parties necessary for the delivery process (e.g., sharing a customer's address with the assigned rider) or with trusted service providers like Google Firebase for notifications.</span>
+                </div>
+            </div>
+
+            <div class="policy-section">
+                <h2><i class="fas fa-child"></i> 3. Children's Privacy</h2>
+                <p>Zoro Platform is not intended for use by children under the age of 13 (or the applicable legal age in your jurisdiction). We do not knowingly collect personal information from children. If we discover that a child has provided us with personal info, we will delete it immediately from our servers.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2><i class="fas fa-user-minus"></i> 4. Account Deletion & Data Rights</h2>
+                <p>You have the right to access, update, or delete your personal information at any time.</p>
+                <div class="highlight-box" style="background: rgba(0, 102, 255, 0.05); border-left: 4px solid var(--primary);">
+                    <h4 style="color: var(--primary);">How to Delete Your Account</h4>
+                    <p style="color: var(--text-main);">To request the permanent deletion of your account and all associated data, please use one of the following methods:</p>
+                    <ul style="margin-top: 10px; list-style: disc; padding-left: 20px; color: var(--text-main);">
+                        <li><b>In-App:</b> Go to Settings > Profile > Delete Account (if available).</li>
+                        <li><b>Email:</b> Send a request to <a href="mailto:zorodeliveryapp@gmail.com">zorodeliveryapp@gmail.com</a> with the subject "Account Deletion Request".</li>
+                    </ul>
+                    <p style="margin-top: 10px; font-size: 0.9rem; color: var(--text-muted);">We will process your request and purge your data from our active records within 30 days, subject to legal or regulatory retention requirements.</p>
+                </div>
+            </div>
+
+            <div class="policy-section">
+                <h2><i class="fas fa-envelope-open-text"></i> 5. Contact Information</h2>
+                <p>For any privacy-related concerns or data safety inquiries, please reach out to our Data Protection Officer:</p>
+                <p style="background: #f8fafc; padding: 24px; border-radius: 12px; border: 1px solid rgba(0, 0, 0, 0.05);">
+                    <b>Zoro Delivery Platform</b><br>
+                    Email: <a href="mailto:zorodeliveryapp@gmail.com">zorodeliveryapp@gmail.com</a><br>
+                    Location: Gurugram, India
+                </p>
+            </div>
+        </div>
     </div>
 
     <footer>
         <div class="container">
-            <div class="footer-bottom" style="border-top: none; margin-top: 0; padding-top: 0;">
+            <div class="footer-bottom" style="border-top: none; margin-top: 0; padding-top: 0; text-align: center;">
                 <div class="logo white-text" style="margin-bottom: 24px; justify-content: center;">
                     <span>Zoro</span>
                 </div>
-                <p style="margin-bottom: 30px;">&copy; 2026 Zoro Delivery App. All rights reserved.</p>
-                <div class="social-links" style="justify-content: center;">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                <p style="margin-bottom: 30px; color: #475569;">&copy; 2026 Zoro Delivery App. All rights reserved.</p>
+                <div style="margin-top: 20px;">
+                    <a href="terms.html" style="color: #64748B; font-size: 0.9rem; margin: 0 15px;">Terms of Service</a>
+                    <a href="privacy.html" style="color: var(--primary); font-size: 0.9rem; margin: 0 15px;">Privacy Policy</a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script>
-        // Mobile Menu Toggle
-        const menuToggle = document.getElementById('mobile-menu');
-        const navLinks = document.querySelector('.nav-links');
-
-        menuToggle.addEventListener('click', () => {
-            menuToggle.classList.toggle('active');
-            navLinks.classList.toggle('active');
-            document.body.classList.toggle('no-scroll');
-        });
-
-        // Close menu when clicking a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                menuToggle.classList.remove('active');
-                navLinks.classList.remove('active');
-                document.body.classList.remove('no-scroll');
-            });
-        });
-    </script>
 
 </body>
 </html>
