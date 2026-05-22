@@ -307,6 +307,11 @@
         </div>
     </footer>
 
+    <!-- Floating Action Button -->
+    <a href="https://github.com/areebmohd/DeliveryPlatformWebsite/releases/latest/download/zoro.apk" download class="floating-btn" id="floating-btn">
+        <i class="fas fa-download"></i> Download App
+    </a>
+
     <script>
         // Force scroll to top on page reload
         if (history.scrollRestoration) {
@@ -331,6 +336,16 @@
                 navLinks.classList.remove('active');
                 document.body.classList.remove('no-scroll');
             });
+        });
+
+        // Floating Button Visibility
+        const floatingBtn = document.getElementById('floating-btn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                floatingBtn.classList.add('show');
+            } else {
+                floatingBtn.classList.remove('show');
+            }
         });
     </script>
 </body>
