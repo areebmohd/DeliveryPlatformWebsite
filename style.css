@@ -389,7 +389,7 @@ nav .btn-primary {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
     max-width: 900px;
     margin: 0 auto;
@@ -755,6 +755,11 @@ footer {
     .contact-section {
         border-radius: 40px;
         margin: 40px 16px;
+        padding: 50px 0;
+    }
+
+    .contact-section .section-header {
+        margin-bottom: 30px;
     }
 
     .footer-content {
