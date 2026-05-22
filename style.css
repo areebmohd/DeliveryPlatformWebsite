@@ -766,6 +766,10 @@ footer {
         margin-bottom: 24px;
     }
 
+    .contact-section .section-header p {
+        margin: 0;
+    }
+
     .footer-content {
         grid-template-columns: 1fr;
         gap: 40px;
