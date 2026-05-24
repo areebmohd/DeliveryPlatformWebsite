@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.zorodelivery.app",
+      "sha256_cert_fingerprints": [
+        "58:82:33:15:DA:45:5D:24:4B:92:D2:E0:49:E9:2D:42:58:DF:6A:A0:C8:16:59:BC:C0:7A:04:27:82:A3:DD:56"
+      ]
+    }
+  }
+]
