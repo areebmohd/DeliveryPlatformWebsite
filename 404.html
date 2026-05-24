@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoro: Store or Product Details</title>
+    <link rel="icon" type="image/png" href="../zoroAppLogo.png">
+    <link rel="shortcut icon" href="../zoroAppLogo.png" type="image/png">
+    <link rel="apple-touch-icon" href="../zoroAppLogo.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fallback-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 160px);
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
+        }
+        .fallback-card {
+            max-width: 600px;
+            width: 100%;
+            background: var(--white, #ffffff);
+            padding: 50px 40px;
+            border-radius: 32px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, 0.02);
+        }
+        .fallback-icon {
+            font-size: 4rem;
+            color: #0066ff;
+            margin-bottom: 24px;
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+        .fallback-card h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+            line-height: 1.3;
+        }
+        .fallback-card p {
+            font-size: 1.05rem;
+            color: #475569;
+            line-height: 1.6;
+            margin-bottom: 32px;
+        }
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+        .btn-full {
+            width: 100%;
+            justify-content: center;
+            padding: 16px 24px;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        .redirect-notice {
+            font-size: 0.9rem;
+            color: #64748b;
+            font-weight: 500;
+        }
+        .countdown-number {
+            color: #0066ff;
+            font-weight: 700;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @media (max-width: 576px) {
+            .fallback-card { padding: 35px 24px; }
+            .fallback-card h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <span>Zoro</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#features">Features</a></li>
+                <li><a href="https://github.com/areebmohd/DeliveryPlatformWebsite/releases/download/v1.0.0/Zoro.apk" class="btn btn-primary">Download App</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Fallback Area -->
+    <div class="fallback-container">
+        <div class="fallback-card">
+            <i class="fas fa-mobile-screen-button fallback-icon"></i>
+            <h1 id="fallback-title">Open in Zoro App</h1>
+            <p id="fallback-desc">You are viewing a shared store or product link. If you have the Zoro Delivery app installed on an Android device, this link should automatically launch the app directly.</p>
+            
+            <div class="btn-group">
+                <a href="https://github.com/areebmohd/DeliveryPlatformWebsite/releases/download/v1.0.0/Zoro.apk" class="btn btn-primary btn-full">
+                    <i class="fas fa-circle-down" style="margin-right: 8px;"></i> Install Zoro App
+                </a>
+                <a href="../index.html" class="btn btn-outline btn-full">
+                    <i class="fas fa-house" style="margin-right: 8px;"></i> Visit Main Website
+                </a>
+            </div>
+
+            <div class="redirect-notice">
+                Redirecting you to our homepage in <span id="countdown" class="countdown-number">8</span> seconds...
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="margin-top: 0;">
+        <div class="container">
+            <div class="footer-bottom" style="border-top: none; margin-top: 0; padding-top: 0; text-align: center;">
+                <div class="logo white-text" style="margin-bottom: 16px; justify-content: center;">
+                    <span>Zoro</span>
+                </div>
+                <p style="margin-bottom: 20px; color: #475569;">&copy; 2026 Zoro App. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Custom messaging based on the route
+        const path = window.location.pathname;
+        const titleEl = document.getElementById('fallback-title');
+        const descEl = document.getElementById('fallback-desc');
+
+        if (path.includes('/store/')) {
+            titleEl.innerText = "View Store on Zoro";
+            descEl.innerText = "You have clicked on a shared link for a Zoro Delivery store. Please download our official mobile app to browse their complete menu and order fresh items instantly!";
+        } else if (path.includes('/product/')) {
+            titleEl.innerText = "View Product on Zoro";
+            descEl.innerText = "You have clicked on a shared link for a Zoro Delivery product. Download our official mobile app to order this item now and get lightning-fast delivery to your doorstep!";
+        }
+
+        // Automatic countdown and redirect back to homepage
+        let secondsLeft = 8;
+        const countdownEl = document.getElementById('countdown');
+        
+        const interval = setInterval(() => {
+            secondsLeft--;
+            countdownEl.innerText = secondsLeft;
+            if (secondsLeft <= 0) {
+                clearInterval(interval);
+                window.location.href = "../index.html";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
