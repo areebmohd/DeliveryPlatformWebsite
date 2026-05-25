@@ -5,7 +5,7 @@
 Welcome to the official website of **Zoro Delivery**, the lightning-fast delivery platform for food, groceries, and essentials. This repository contains the source code for the Zoro landing page, designed to provide a premium and seamless experience for customers, businesses, and riders.
 
 ## 🌐 Live Demo
-Visit the live site at: [zorodelivery.com](https://zorodelivery.com/)
+Visit the live site at: [zorodelivery.vercel.app](https://zorodelivery.vercel.app/)
 
 ---
 
