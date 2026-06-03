@@ -88,7 +88,7 @@ To run this project locally, simply clone the repository and open `index.html` i
 ---
 
 ## 📞 Contact Us
-- **Phone**: [+91 7534846938](tel:+917534846938)
+- **WhatsApp**: [+91 8572841739](https://wa.me/918572841739)
 - **Email**: [zorodeliveryapp@gmail.com](mailto:zorodeliveryapp@gmail.com)
 - **Address**: Your City, India.
 
